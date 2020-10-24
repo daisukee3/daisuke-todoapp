@@ -1,0 +1,149 @@
+.signin{
+    position: absolute;
+    height: 36px;
+    left: 26px;
+    right: 305px;
+    top: 92px;
+    bottom: 793px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+    /* identical to box height */
+    
+    color: #000000;
+    }
+    
+    .signup{
+        position: absolute;
+        height: 36px;
+        left: 26px;
+        right: 49.73%;
+        top: 92px;
+        
+    
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 36px;
+        /* identical to box height */
+        color: #000000;
+    }
+    
+    .emaillabel{
+        position: absolute;
+        width: 44px;
+        height: 25px;
+        left: 26px;
+        top: 161px;
+        
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+        
+        
+        color: #000000;
+    
+    }
+    
+    .emailfield{
+        position: absolute;
+    width: 362px;
+    height: 40px;
+    left: 26px;
+    top: 190px;
+    
+    background: #F4F4F4;
+    border-radius: 10px;
+    }
+    
+    .passwordlabel{
+        position: absolute;
+    width: 76px;
+    height: 25px;
+    left: 26px;
+    top: 263px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    
+    color: #000000;
+    
+    }
+    
+    .passwordfield{
+        position: absolute;
+        width: 362px;
+        height: 40px;
+        left: 26px;
+        top: 295px;
+        
+        background: #F4F4F4;
+        border-radius: 10px;
+    
+    }
+    
+    .submitbtn{
+    position: absolute;
+    width: 362px;
+    height: 40px;
+    left: 30px;
+    top: 889px;
+    
+    background: #F8BD1C;
+    border-radius: 4px;
+    // transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+    
+    .password_confirmation_label{
+    position: absolute;
+    width: 186px;
+    height: 25px;
+    left: 26px;
+    top: 351px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #000000;
+    }
+    
+    .password_confirmation_field{
+    position: absolute;
+    width: 362px;
+    height: 40px;
+    left: 26px;
+    top: 385px;
+    background: #F4F4F4;
+    border-radius: 10px;
+    }
+    
+    // .submit_title{
+    //     position: absolute;
+    //     width: 60px;
+    //     height: 25px;
+    //     left: 179px;
+    //     top: 857px;
+        
+    //     font-family: Avenir;
+    //     font-style: normal;
+    //     font-weight: 800;
+    //     font-size: 18px;
+    //     line-height: 25px;
+    //     /* identical to box height */    
+    //     color: #FFFFFF;
+    // }
+    
