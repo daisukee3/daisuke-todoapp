@@ -1,2 +1,19 @@
 <div class="container">
+    <div class="index_top">
+      All Boards
+    </div>
+
+    <% @boards.each do |board| %>
+        <div class="card">
+            <div class="card_content">
+                <div class="card_title">
+                 <%= board.title %>
+                </div>
+                <div class="card_text">
+                 <%= board.content %>
+                </div>
+            </div>
+        </div>
+    <% end %>
+
 </div>
