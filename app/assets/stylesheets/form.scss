@@ -1,0 +1,75 @@
+.top_label{
+    width: 137px;
+    height: 36px;
+    left: 26px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+}
+
+.title_label{
+position: absolute;
+width: 49px;
+height: 25px;
+left: 26px;
+top: 157px;
+
+font-family: Avenir;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+
+.content_label{
+    position: absolute;
+    width: 92px;
+    height: 25px;
+    left: 26px;
+    top: 263px;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+}
+
+input {
+    &.text {
+        position: absolute;
+        width: 362px;
+        height: 40px;
+        left: 26px;
+        top: 190px;
+        
+        background: #F4F4F4;
+        border-radius: 10px; 
+    }
+  }
+  
+  textarea {
+    position: absolute;
+    width: 362px;
+    height: 203px;
+    left: 26px;
+    top: 296px;
+    
+    background: #F4F4F4;
+    border-radius: 10px;
+  }
