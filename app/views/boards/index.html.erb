@@ -9,6 +9,14 @@
                 <div class="card_title">
                  <%= board.title %>
                 </div>
+                <div class="board_detail_actions">
+                    <div class="dropdown">
+                         <%= image_tag 'Combined Shape.svg', class: 'dropbtn' %>
+                        <div class="dropdown-content mini">
+                            <%= link_to 'Edit', edit_board_path(board) %>
+                        </div>
+                    </div>
+                    </div>
                 <div class="card_text">
                  <%= board.content %>
                 </div>
