@@ -35,6 +35,10 @@ $avatar-size: 32px;
       border-radius: 100%;
       margin-right: 8px;
     }
+    &_actions {
+        right: 0px;
+        position: absolute;
+      }
   }
 
   &_content {
@@ -57,3 +61,4 @@ $avatar-size: 32px;
     }
   }
 }
+
