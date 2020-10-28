@@ -14,6 +14,7 @@
                          <%= image_tag 'Combined Shape.svg', class: 'dropbtn' %>
                         <div class="dropdown-content mini">
                             <%= link_to 'Edit', edit_board_path(board) %>
+                            <%= link_to 'Delete', board_path(board), data: { method: 'delete' , confirm: 'Are you sure you want to delete it?' } %>
                         </div>
                     </div>
                     </div>
