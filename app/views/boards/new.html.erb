@@ -1,5 +1,10 @@
 <div class="container">
     <div class="top_label">New Board</div>
+     <ul>
+    <% @board.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
     <%= form_with(model: @board, url: boards_path, method: 'post', local: true) do |f| %>
     <div class= "title_label">
         <%= f.label :title, 'Name' %>
