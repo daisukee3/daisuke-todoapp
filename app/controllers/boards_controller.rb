@@ -11,6 +11,16 @@ class BoardsController < ApplicationController
         @board = Board.new
     end
 
+    def create
+        @board = Board.new(board_params)
+        if @board.save
+            redirect_to boards_path(@board), notice: '保存完了'
+        else
+            flash.now[:error] = '保存失敗'
+            render :new
+        end
+    end
+
     def edit
         @board = Board.find(params[:id])
     end
