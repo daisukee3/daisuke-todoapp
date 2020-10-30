@@ -1,10 +1,10 @@
 .dropbtn {
     border: none;
+    margin-right: 16px;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+  text-align: right;
 }
 
 .dropdown-content {
@@ -26,6 +26,7 @@
   padding: 8px 16px;
   text-decoration: none;
   display: block;
+  color:#000000;
 }
 
 .dropdown-content a:hover {

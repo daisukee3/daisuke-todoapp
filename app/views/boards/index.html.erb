@@ -1,27 +1,34 @@
 <div class="container">
-    <div class="index_top">
+    <div class="top_label">
       All Boards
     </div>
 
     <% @boards.each do |board| %>
-        <div class="card">
-            <div class="card_content">
-                <div class="card_title">
-                 <%= board.title %>
-                </div>
+            <div class="card">
                 <div class="board_detail_actions">
                     <div class="dropdown">
-                         <%= image_tag 'Combined Shape.svg', class: 'dropbtn' %>
-                        <div class="dropdown-content mini">
-                            <%= link_to 'Edit', edit_board_path(board) %>
-                            <%= link_to 'Delete', board_path(board), data: { method: 'delete' , confirm: 'Are you sure you want to delete it?' } %>
-                        </div>
+                        <%= image_tag 'Combined Shape.svg', class: 'dropbtn' %>
+                            <div class="dropdown-content mini">
+                                <%= link_to 'Edit', edit_board_path(board) %>
+                                <%= link_to 'Delete', board_path(board), data: { method: 'delete' , confirm: 'Are you sure you want to delete it?' } %>
+                            </div>
                     </div>
-                    </div>
-                <div class="card_text">
-                 <%= board.content %>
                 </div>
+                            <div class="card_content">
+                            <%= link_to board_path(board) do %>
+                                <div class="card_title">
+                                     <%= board.title %>
+                                </div>
+                            <% end %>
+                                    <div class="card_text">
+                                     <%= board.content %>
+                                    </div>
+                            </div>
             </div>
+    <% end %>
+    <%= link_to new_board_path do %>
+        <div class="add_new_board">
+        <div class= "add_new_board_label">+ Add new board</div> 
         </div>
     <% end %>
 
