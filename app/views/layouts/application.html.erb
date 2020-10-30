@@ -10,6 +10,13 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <header class="header">
+    <div class="header_logos">
+        <% if !current_page?(root_path) %>
+          <%= link_to :back do %>
+            <%= image_tag 'back.svg', class: 'header_back' %>
+          <% end %>
+        <% end %>
+    </div>
         <p class='top'>Boards</p>
           <hr>
     </header>
