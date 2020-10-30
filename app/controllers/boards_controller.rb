@@ -45,7 +45,7 @@ class BoardsController < ApplicationController
         params.require(:board).permit(:title, :content)
     end
 
-    def board
+    def set_board
         @board = Board.find(params[:id])
     end
 end

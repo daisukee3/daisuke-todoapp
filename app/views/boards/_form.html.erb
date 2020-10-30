@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="new_label">New Board</div>
+     <ul>
+    <% @board.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+    <%= form_with(model: @board, local: true) do |f| %>
+    <div class= "title_label">
+        <%= f.label :title, 'Name' %>
+    </div>
+    <div>
+        <%= f.text_field :title, class: 'text' %>
+    </div>
+    <div class= "content_label">
+        <%= f.label :content, 'Description' %>
+    </div>
+    <div>
+        <%= f.text_area :content %>
+    </div>
+    <%= f.submit 'Submit', class: 'btn-primary' %>
+    <% end %>
+</div>
