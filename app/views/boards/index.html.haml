@@ -3,18 +3,20 @@
     All Boards
   - @boards.each do |board|
     .card
-      .board_detail_actions
-        .dropdown
-          = image_tag 'Combined Shape.svg', class: 'dropbtn'
-          .dropdown-content.mini
-            = link_to 'Edit', edit_board_path(board)
-            = link_to 'Delete', board_path(board), data: { method: 'delete' , confirm: 'Are you sure you want to delete it?' }
-      .card_content
-        = link_to tasks_path do
-          .card_title
-            = board.title
-        .card_text
-          = board.content
+      - if user_signed_in? && current_user.has_written?(board)
+        .board_detail_actions
+          .dropdown
+            = image_tag 'Combined Shape.svg', class: 'dropbtn'
+            .dropdown-content.mini
+              = link_to 'Edit', edit_board_path(board)
+              = link_to 'Delete', board_path(board), data: { method: 'delete' , confirm: 'Are you sure you want to delete it?' }
+        .card_content
+          = link_to tasks_path do
+            .card_title
+              = board.title
+          .card_text
+            = board.content
+.container
   = link_to new_board_path do
     .add_new_board
       .add_new_board_label + Add new board
