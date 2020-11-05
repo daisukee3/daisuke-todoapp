@@ -22,9 +22,14 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :boards, dependent: :destroy
+  has_many :tasks, dependent: :destroy
 
   def has_written?(board)
     boards.exists?(id: board.id)
+  end
+
+  def has_task_written?(task)
+    tasks.exists?(id: task.id)
   end
 
 end
