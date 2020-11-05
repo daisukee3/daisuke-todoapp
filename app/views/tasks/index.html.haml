@@ -1,2 +1,22 @@
 .container
-  %p index
+  .top_label
+    Brackets
+  - @tasks.each do |task|
+    .card
+      - if user_signed_in? && current_user.has_task_written?(task)
+        .board_detail_actions
+          .dropdown
+            = image_tag 'Combined Shape.svg', class: 'dropbtn'
+            .dropdown-content.mini
+              = link_to 'Edit', edit_task_path(task)
+              = link_to 'Delete', task_path(task), data: { method: 'delete' , confirm: 'Are you sure you want to delete it?' }
+        .card_content
+          = link_to task_path do
+            .card_title
+              = task.title
+          .card_text
+            = task.content
+.container
+  = link_to new_task_path do
+    .add_new_task
+      .add_new_task_label + Add new task

@@ -17,5 +17,5 @@ class Board < ApplicationRecord
     validates :title, presence: true
     validates :content, presence: true
 
-    bolongs_to :user
+    belongs_to :user
 end
