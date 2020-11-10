@@ -7,7 +7,6 @@ $container-padding: 16px;
         height: 180px;
         position: relative;
         overflow: hidden;
-        margin: $container-padding * -1 $container-padding * -1 16px;
 
         img {
   
@@ -20,3 +19,31 @@ $container-padding: 16px;
         }
     }
 }
+
+.task_container{
+    padding-top: 32px;
+    padding-left: 24px;
+}
+.task_title{
+    height: 36px;
+    margin-left: 24px;
+    right: 0%;
+    top: calc(50% - 36px/2);
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.task_content{
+    width: 362px;
+    height: 217px;
+    top: 364px;
+    margin-top: 35px;
+    background: #F4F4F4;
+    border-radius: 10px;
+}
+
+

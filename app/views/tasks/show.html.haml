@@ -1,13 +1,9 @@
-.container
+.task_container
+  %h1.task_title= @task.title
   .task
     - if @task.eyecatch.attached?
       .task_image
         = image_tag @task.eyecatch
-    %h1.task_title= @task.title
-    .task_detail
-      %div
-        %p cohki0305
-        %p 2020/4/16
     .task_content
       = @task.content
     .task_heart
