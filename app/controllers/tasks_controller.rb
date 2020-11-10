@@ -14,7 +14,7 @@ class TasksController < ApplicationController
     def create
         @task = current_user.tasks.build(task_params)
         if @task.save
-            redirect_to tasks_path(@task), notice: '保存完了'
+            redirect_to task_path(@task), notice: '保存完了'
         else
             flash.now[:error] = '保存失敗'
             render :new
@@ -43,7 +43,7 @@ class TasksController < ApplicationController
 
     private
     def task_params
-        params.require(:task).permit(:title, :content)
+        params.require(:task).permit(:title, :content, :eyecatch)
     end
 
     def set_task

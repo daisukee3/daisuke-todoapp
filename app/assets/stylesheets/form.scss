@@ -18,17 +18,14 @@
     font-weight: 800;
     font-size: 26px;
     line-height: 36px;
-    margin-left: 30px;
     color: #000000;
 }
 
 .title_label{
-position: absolute;
 width: 49px;
 height: 25px;
 left: 26px;
-top: 157px;
-
+margin-top: 29px;
 font-family: Avenir;
 font-style: normal;
 font-weight: normal;
@@ -42,12 +39,10 @@ color: #000000;
 }
 
 .content_label{
-    position: absolute;
     width: 92px;
     height: 25px;
     left: 26px;
-    top: 263px;
-    
+    margin-top: 33px;
     font-family: Avenir;
     font-style: normal;
     font-weight: normal;
@@ -61,24 +56,44 @@ color: #000000;
 
 input {
     &.text {
-        position: absolute;
         width: 362px;
         height: 40px;
-        left: 26px;
-        top: 190px;
-        
+        margin-top: 8px;
         background: #F4F4F4;
         border-radius: 10px; 
     }
   }
   
   textarea {
-    position: absolute;
     width: 362px;
     height: 203px;
-    left: 26px;
-    top: 296px;
+    margin-top: 8px;
     
     background: #F4F4F4;
     border-radius: 10px;
   }
+
+  .add_new{
+    width: 362px;
+    height: 160px;
+    left: 30px;
+    top: 348px;
+    margin-top: 26px;
+    margin-left: 30px;
+    
+
+    background: #FFFFFF;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.add_new_label{
+    text-align: center;
+    margin-top: 68px;
+    color:#000000;
+}
+
+.form_container{
+    margin-top: 33px;
+    margin-left: 26px;
+}
