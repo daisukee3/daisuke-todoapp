@@ -1,5 +1,8 @@
 .container
   .task
+    - if @task.eyecatch.attached?
+      .task_image
+        = image_tag @task.eyecatch
     %h1.task_title= @task.title
     .task_detail
       %div

@@ -1,9 +1,13 @@
-.container
+.form_container
   .new_label New Card
   %ul
     - @task.errors.full_messages.each do |message|
       %li= message
   = form_with(model: @task, local: true) do |f|
+    %div
+      = f.label :eyecatch, 'EyeCatch'
+    %div
+      = f.file_field :eyecatch
     .title_label
       = f.label :title, 'Name'
     %div

@@ -3,6 +3,9 @@
     Brackets
   - @tasks.each do |task|
     .card
+      - if task.eyecatch.attached?
+        .card_image
+          = image_tag task.eyecatch
       - if user_signed_in? && current_user.has_task_written?(task)
         .board_detail_actions
           .dropdown
@@ -16,7 +19,6 @@
               = task.title
           .card_text
             = task.content
-.container
   = link_to new_task_path do
-    .add_new_task
-      .add_new_task_label + Add new task
+    .add_new
+      .add_new_label + Add new task
