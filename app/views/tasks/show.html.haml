@@ -1,5 +1,11 @@
 .task_container
   %h1.task_title= @task.title
+  .task_detail_actions
+    .dropdown
+      = image_tag 'Combined Shape.svg', class: 'dropbtn'
+      .dropdown-content.mini
+        = link_to 'Edit', edit_task_path(@task)
+        = link_to 'Delete',task_path(@task), data: { method: 'delete' , confirm: 'Are you sure you want to delete it?' }
   .task
     - if @task.eyecatch.attached?
       .task_image
