@@ -1,0 +1,19 @@
+.comment_container{
+    padding-top: 33px;
+    padding-left: 26px;
+}
+
+.new_comment_label{
+    height: 36px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 36px/2);
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+
+    padding-bottom: 25px;
+}
