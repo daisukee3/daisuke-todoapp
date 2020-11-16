@@ -12,4 +12,13 @@
         = image_tag @task.eyecatch
     .task_content
       = @task.content
-    .task_heart
+
+.task_comment.index
+  .comment_label Comment
+  - @comments.each do |comment|
+    .task_comment
+      %p= comment.content
+
+= link_to new_task_comment_path(@task) do
+  .btn-secondary
+    + Add new comment
