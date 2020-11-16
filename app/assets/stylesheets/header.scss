@@ -1,0 +1,54 @@
+$avatar-size: 40px;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+  
+    &_pageTitle {
+      color: white;
+    }
+  
+    &_avatar {
+      width: $avatar-size;
+      height: $avatar-size;
+      border-radius: 100%;
+      margin-top: 10px;
+    }
+
+    &_loginBtn {
+        height: $avatar-size;
+        border-radius: 8px;
+        font-size: 12px;
+        padding: 12px 16px;
+        color: #000000;
+      }
+  }
+
+.top {
+    /* Boards */
+position: absolute;
+width: 56px;
+height: 25px;
+top: 17px;
+font-family: Avenir;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+margin-left: 30px;
+
+
+color: #000000;
+}
+
+hr {
+    position: absolute;
+    width: 1920px;
+    height: 1px;
+    left: 0px;
+    top: 58px;
+    
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    }
