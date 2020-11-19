@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+    before_action :authenticate_user!, only: [:new, :create]
+
     def new
         task = Task.find(params[:task_id])
         @comment = task.comments.build
@@ -21,4 +23,3 @@ class CommentsController < ApplicationController
     end
 
 end
-
