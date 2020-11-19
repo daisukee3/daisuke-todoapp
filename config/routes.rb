@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   resources :tasks do
     resources :comments, only: [:new, :create]
   end
+
+  resource :profile, only: [:show, :edit, :update]
 end
