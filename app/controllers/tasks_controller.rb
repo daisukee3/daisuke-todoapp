@@ -1,7 +1,9 @@
 class TasksController < ApplicationController
-    before_action :set_task, only: [:show]
+    before_action :set_task, only: [:show, :edit, :update]
+    before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
     def index
-        @tasks = Task.all
+        @board = Board.find(params[:board_id])
+        @tasks = @board.tasks.all
     end
 
     def show
@@ -9,13 +11,15 @@ class TasksController < ApplicationController
     end
 
     def new
-        @task = current_user.tasks.build
+        board = Board.find(params[:board_id])
+        @task = board.tasks.build
     end
 
     def create
-        @task = current_user.tasks.build(task_params)
+        @board = current_user.boards.find(params[:board_id])
+        @task = @board.tasks.build(task_params.merge!(user_id: current_user.id))
         if @task.save
-            redirect_to task_path(@task), notice: '保存完了'
+            redirect_to board_tasks_path(@board), notice: '保存完了'
         else
             flash.now[:error] = '保存失敗'
             render :new
@@ -23,13 +27,13 @@ class TasksController < ApplicationController
     end
 
     def edit
-        @task = current_user.tasks.find(params[:id])
     end
 
     def update
-        @task = current_user.tasks.find(params[:id])
+        @board = Board.find(params[:board_id])
+        @task = @board.tasks.find(params[:id])
         if @task.update(task_params)
-            redirect_to task_path(@task), notice: '更新出来ました'
+            redirect_to board_task_path(@board, @task), notice: '更新出来ました'
         else
             flash.now[:error] = '更新出来ませんでした'
             render :edit
@@ -37,9 +41,10 @@ class TasksController < ApplicationController
     end
 
     def destroy
-        task = current_user.tasks.find(params[:id])
+        board = Board.find(params[:board_id])
+        task = board.tasks.find(params[:id])
         task.destroy!
-        redirect_to root_path, notice: '削除に成功しました'
+        redirect_to board_tasks_path(board), notice: '削除に成功しました'
     end
 
     private
@@ -48,6 +53,7 @@ class TasksController < ApplicationController
     end
 
     def set_task
-        @task = Task.find(params[:id])
+        @board = Board.find(params[:board_id])
+        @task = @board.tasks.find(params[:id])
     end
 end
