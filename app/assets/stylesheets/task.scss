@@ -45,3 +45,8 @@ $container-padding: 16px;
     border-radius: 10px;
 }
 
+.task_comment_set,
+.task_comment{
+    display: inline-block;
+    vertical-align: 50%;
+}

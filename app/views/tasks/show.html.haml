@@ -15,9 +15,11 @@
 
 .task_comment.index
   .comment_label Comment
-  - @comments.each do |comment|
-    .task_comment
-      %p= comment.content
+  .task_comment_set
+    = image_tag current_user.avatar_image, class: 'header_avatar'
+    - @comments.each do |comment|
+      .task_comment
+        %p= comment.content
 
 = link_to new_board_task_comment_path(board_id: @task.board_id, task_id: @task.id) do
   .btn-secondary
