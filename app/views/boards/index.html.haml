@@ -16,6 +16,8 @@
               = board.title
           .card_text
             = board.content
+          .card_detail
+            = image_tag board.user.avatar_image
   = link_to new_board_path(@boards) do
     .add_new
       .add_new_label + Add new board

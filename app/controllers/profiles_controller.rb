@@ -28,7 +28,8 @@ class ProfilesController < ApplicationController
             :nickname,
             :introduction,
             :gender,
-            :birthday
+            :birthday,
+            :avatar
         )
     end
 end
