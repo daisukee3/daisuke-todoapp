@@ -54,25 +54,26 @@ color: #000000;
 
 input {
     &.text {
-        width: 362px;
+        width: 332px;
         height: 40px;
         margin-top: 8px;
         background: #F4F4F4;
         border-radius: 10px; 
+        border: none;
     }
   }
   
   textarea {
-    width: 362px;
+    width: 332px;
     height: 203px;
     margin-top: 8px;
-    
+    border: none;
     background: #F4F4F4;
     border-radius: 10px;
   }
 
   .add_new{
-    width: 362px;
+    width: 332px;
     height: 160px;
     left: 30px;
     top: 348px;
