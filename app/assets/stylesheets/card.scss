@@ -1,13 +1,12 @@
+@import './variables'; 
 $heart-size: 16px;
 $avatar-size: 32px;
 
 .card {
     margin-top: 35px;
     margin-left: 30px;
-    width: 362px;
+    width: 332px;
     height: 161px;
-    left: 30px;
-    top: 161px;
     background: #F4F4F4;
     border-radius: 10px;
   cursor: pointer;
@@ -48,6 +47,7 @@ $avatar-size: 32px;
 
   &_content {
     padding: 16px 16px;
+    position: relative;
   }
 
   &_image {
@@ -70,3 +70,20 @@ $avatar-size: 32px;
   }
 }
 
+.card_comments_count{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-right: 5px;
+
+  color: $text-base-color;
+
+  mix-blend-mode: normal;
+  opacity: 0.2;
+
+}

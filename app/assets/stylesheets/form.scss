@@ -1,3 +1,4 @@
+@import './variables'; 
 .top_label{
     height: 36px;
     font-family: Avenir;
@@ -6,7 +7,7 @@
     font-size: 26px;
     line-height: 36px;
     margin-left: 30px;
-    color: #000000;
+    color: $text-base-color;
 }
 
 .new_label{
@@ -16,70 +17,57 @@
     font-weight: 800;
     font-size: 26px;
     line-height: 36px;
-    color: #000000;
+    color: $text-base-color;
 }
 
 .title_label{
 width: 49px;
 height: 25px;
-left: 26px;
 margin-top: 29px;
 font-family: Avenir;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 25px;
-/* identical to box height */
-
-
-color: #000000;
-
+color: $text-base-color;
 }
 
 .content_label{
     width: 92px;
     height: 25px;
-    left: 26px;
     margin-top: 33px;
     font-family: Avenir;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    /* identical to box height */
-    
-    
-    color: #000000;
+    color: $text-base-color;
 }
-
 input {
     &.text {
-        width: 362px;
+        width: 332px;
         height: 40px;
         margin-top: 8px;
         background: #F4F4F4;
         border-radius: 10px; 
+        border: none;
     }
   }
   
   textarea {
-    width: 362px;
+    width: 332px;
     height: 203px;
     margin-top: 8px;
-    
+    border: none;
     background: #F4F4F4;
     border-radius: 10px;
   }
 
   .add_new{
-    width: 362px;
+    width: 332px;
     height: 160px;
-    left: 30px;
-    top: 348px;
     margin-top: 26px;
     margin-left: 30px;
-    
-
     background: #FFFFFF;
     border: 1px dashed rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -88,7 +76,7 @@ input {
 .add_new_label{
     text-align: center;
     margin-top: 68px;
-    color:#000000;
+    color: $text-base-color;
 }
 
 .form_container{

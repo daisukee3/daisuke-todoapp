@@ -1,6 +1,6 @@
 .comment_container
     .new_comment_label New Comment
-    = form_with(model: @comment, url: task_comments_path(@comment.task), local: true) do |f|
+    = form_with(model: @comment, url: board_task_comments_path(board_id: @comment.task.board.id, task_id: @comment.task.id), method: 'post', local: true) do |f|
         %div
         = f.text_area :content
         = f.submit 'Submit', class: 'btn-primary'

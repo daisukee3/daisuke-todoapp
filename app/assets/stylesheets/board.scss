@@ -1,23 +1,17 @@
+@import './variables'; 
 .card_title{
     height: 25px;
-    left: 0%;
-    right: 76.79%;
     
     font-family: Avenir;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    /* identical to box height */
-    
-    
-    color: #000000;
+    color: $text-base-color;
 }
 
 .card_text{
     height: 19px;
-    left: 0%;
-    right: 0%;
     margin-top: 6px;
     
     font-family: Avenir;
@@ -25,9 +19,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
-    
-    color: #000000;
-    
+    color: $text-base-color;
     mix-blend-mode: normal;
     opacity: 0.4;
 }

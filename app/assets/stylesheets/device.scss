@@ -1,0 +1,92 @@
+@import './variables'; 
+.device_container{
+margin-left: 26px;
+}
+
+.signin{
+    height: 36px;    
+    margin-top: 33px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;    
+    color: $text-base-color;
+    }
+    
+.signup{
+    height: 36px;
+    margin-top: 33px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+    color: $text-base-color;
+    }
+    
+    .emaillabel{
+    width: 44px;
+    height: 25px;
+    margin-top: 33px;
+    display: inline-block;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: $text-base-color;
+    }
+    
+    .emailfield{
+    height: 40px;
+    width: 362px;
+    margin-top: 3px;
+    border: none;
+    background: #F4F4F4;
+    border-radius: 10px;
+    }
+    
+    .passwordlabel{
+    height: 25px;
+    margin-top: 33px;
+    display: inline-block;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: $text-base-color;
+    }
+    
+    .passwordfield{
+    width: 362px;
+    height: 40px; 
+    margin-top: 7px;
+    border: none;
+    background: #F4F4F4;
+    border-radius: 10px;
+    
+    }
+    
+    .password_confirmation_label{
+    height: 25px;
+    display: inline-block;
+    margin-top: 16px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: $text-base-color;
+    }
+    
+    .password_confirmation_field{
+    width: 362px;
+    height: 40px;
+    margin-top: 9px;
+    border: none;
+    background: #F4F4F4;
+    border-radius: 10px;
+    }
+    
