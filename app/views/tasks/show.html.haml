@@ -16,7 +16,7 @@
 .task_comment.index
   .comment_label Comment
   .task_comment_set
-    = image_tag current_user.avatar_image, class: 'header_avatar'
+    = image_tag 'default-avatar.png', class: 'header_avatar'
     - @comments.each do |comment|
       .task_comment
         %p= comment.content
