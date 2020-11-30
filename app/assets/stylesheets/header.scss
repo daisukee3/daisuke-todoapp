@@ -1,3 +1,4 @@
+@import './variables'; 
 $avatar-size: 40px;
 
 .header {
@@ -20,7 +21,7 @@ $avatar-size: 40px;
         border-radius: 8px;
         font-size: 12px;
         padding: 12px 16px;
-        color: #000000;
+        color: $text-base-color;
       }
 
   }
@@ -36,7 +37,7 @@ font-weight: normal;
 font-size: 18px;
 line-height: 25px;
 margin-left: 30px;
-color: #000000;
+color: $text-base-color;
 }
 
 hr {

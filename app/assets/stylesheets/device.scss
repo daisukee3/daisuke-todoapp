@@ -1,3 +1,4 @@
+@import './variables'; 
 .device_container{
 margin-left: 26px;
 }
@@ -10,19 +11,18 @@ margin-left: 26px;
     font-weight: 800;
     font-size: 26px;
     line-height: 36px;    
-    color: #000000;
+    color: $text-base-color;
     }
     
 .signup{
     height: 36px;
-    left: 26px;
     margin-top: 33px;
     font-family: Avenir;
     font-style: normal;
     font-weight: 800;
     font-size: 26px;
     line-height: 36px;
-    color: #000000;
+    color: $text-base-color;
     }
     
     .emaillabel{
@@ -35,7 +35,7 @@ margin-left: 26px;
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    color: #000000;
+    color: $text-base-color;
     }
     
     .emailfield{
@@ -56,7 +56,7 @@ margin-left: 26px;
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    color: #000000;
+    color: $text-base-color;
     }
     
     .passwordfield{
@@ -78,7 +78,7 @@ margin-left: 26px;
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    color: #000000;
+    color: $text-base-color;
     }
     
     .password_confirmation_field{

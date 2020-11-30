@@ -1,4 +1,4 @@
-@import 'signin';
+@import 'device';
 @import 'board';
 @import 'buttons';
 @import 'form';
@@ -20,6 +20,7 @@ html {
     box-sizing: border-box;
     height: 100%;
     overflow-x: hidden;
+    color: $text-base-color;
   }
   
   *,

@@ -1,3 +1,4 @@
+@import './variables'; 
 $image_size: 56px;
 
 .profilePage {
@@ -33,7 +34,7 @@ $image_size: 56px;
       padding: 0px 8px;
 
       a {
-        color:#000000;
+        color: $text-base-color;
       }
     }
 
